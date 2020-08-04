@@ -20,8 +20,11 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
+    
+    /* tamanho padrão da fonte: 16px - 1rem - 100% */
     font-size: 60%; /* controle das medidas em rem*/
 }
 
 body{
+    background-color: var(--color-background);
 }
