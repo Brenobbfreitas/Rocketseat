@@ -23,8 +23,49 @@
     
     /* tamanho padrão da fonte: 16px - 1rem - 100% */
     font-size: 60%; /* controle das medidas em rem*/
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+#container {
+    width: 100px;
+    border: 1px solid red;
+
+    padding-left: 50px;
+    padding-right: 100px;
+} */
+html,
+body{
+    height: 100vh;
 }
 
-body{
-    background-color: var(--color-background);
+
+body {
+    height: 100vh;
+    background: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+body,
+input,
+button,
+textarea{
+    /* font: 500 1.6rem Poppins; mesma coisa da opção abaixo, só que agrupado */
+    font-weight: 600;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: var(--color-text-base);
+}
+
+#container{
+     width: 90vw; /*whidth = largura */
+    max-width: 700px;
+
+}
+
