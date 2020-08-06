@@ -66,7 +66,13 @@ textarea{
 
 #container{
      width: 90vw; /*whidth = largura */
-    max-width: 700px;
-
+     max-width: 700px;     
 }
 
+.logo-container img{
+    height: 10rem;
+}
+
+.hero-image{
+    width: 100%;
+}
