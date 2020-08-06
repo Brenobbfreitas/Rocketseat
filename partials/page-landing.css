@@ -1,0 +1,8 @@
+:root{
+    font-size: 40%; /*modificar as medidas em rem */
+}
+
+
+#page-landing{
+    background: var(--color-primary);
+}
