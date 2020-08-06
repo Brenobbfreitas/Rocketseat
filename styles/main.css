@@ -71,3 +71,8 @@ textarea{
 
 
 
+@media (min-whidth: 700px){
+    :root{
+        font-size: 62.5%;
+    }
+}
