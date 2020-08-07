@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proffy | Plataforma de estudos online</title>
     <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/partials/study.css">
+    <link rel="stylesheet" href="/styles/partials/page-study.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 </head>
@@ -19,15 +19,14 @@
                 <a href="/">
                 <img src="/images/icons/back.svg" alt="Voltar">
                 </a>
-                <img src="/images/icons/logo.svg" alt="Proffy">
+                <img src="/images/logo.svg" alt="Proffy">
             </div>
-        </header>
         
         <div class="header-content">
             <strong>Esses são os professores disponíveis</strong>
             <form id="search-teachers">
                 <div class="select-block">
-                    <label for="subject" id="subject"></label>
+                    <label for="subject" id="subject">Materia</label>
                     <select name="subject" id="subject">
                         <option value="" disabled="" hidden="">Selecione uma opção</option>
                         <option value="1">Artes</option>
@@ -42,9 +41,29 @@
                         <option value="10">Quimica </option>
                     </select>
                     </label>
+                </div>  
+                <div class="select-block">
+                    <label for="weekday">Dia da semana</label>
+                    <select name="weekday" id="weekday">
+                        <option value="" disabled="" hidden="">Selecione uma opção</option>
+                        <option value="0">Domingo</option>
+                        <option value="1">Segunda-feira</option>
+                        <option value="2">Terça-feira</option>
+                        <option value="3">Quarta-feira</option>
+                        <option value="4">Quinta-feira</option>
+                        <option value="5">Sexta-feira</option>
+                        <option value="6">Sábado</option>
+                    </select>
                 </div>
+                <div class="input-block">
+                    <label for="time">Hora</label>
+                    <input name="time" id="time" type="time" min="0" max="24">
+                </div>
+                <button type="submit">Filtrar</button>
             </form>
         </div>
+    </header>
+
     </div>
 
 

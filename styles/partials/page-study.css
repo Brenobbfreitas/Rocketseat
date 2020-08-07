@@ -1,0 +1,81 @@
+#page-study #container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.page-header{
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header .top-bar-container{
+    width: 90%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.6rem 0;
+}
+
+.page-header .top-bar-container a{
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover{
+    opacity: 0.6;
+}
+
+.page-header .top-bar-container img{
+    height: 1.6rem;
+}
+
+
+.page-header .header-content{
+    width: 90%;
+    margin: 3.2rem auto;
+
+}
+
+.page-header .header-content strong{
+    font: 700 3.6rem Archivo;
+    line-height: 8rem;
+    color:var(--color-title-in-primary);
+}
+
+#search-teachers{
+    margin-top: 3.2rem;
+}
+
+#search-teachers label{
+    color: var(--color-text-in-primary)
+}
+
+#search-teachers .select-block{
+    margin-bottom: 1.4rem;
+}
+
+#search-teachers button{
+     width: 100%; /* largura de 100% */
+      height: 5.6rem; /* altura de 100% */
+      background: var(--color-secondary); /* cor do botão*/
+      color: var(--color-button-text);/* cor da letra do botão*/
+      border:0; /*tirando as bordas*/
+      border-radius: .8rem;/*arredondar as bordas*/
+      cursor: pointer;/*muda o ponteiro do mouse*/
+      font: 700 1.6rem Archivo; /*tipo de fonte*/
+      display: flex;
+      align-items: center;
+      justify-content: center;/*garantir que o botão estara sempre alinhado*/
+
+      transition: background 0.2s;
+      margin-top: 3.2rem;
+}
+
+#search-teachers button:hover{
+    background-color: var(--color-secondary-dark);/*utiliza o trnasition para mudar a cor do botão quando o mouse passar por cima */
+}
