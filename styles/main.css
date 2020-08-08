@@ -45,9 +45,13 @@ body{
 }
 
 
+#page-landing{
+    background: var(--color-backgroundnew);
+}
+
 body {
     height: 100vh;
-    background: var(--color-backgroundnew);
+    background: var(--color-background);
     display: flex;
     align-items: center;
     justify-content: center;
