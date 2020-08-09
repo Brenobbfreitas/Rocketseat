@@ -5,7 +5,7 @@
 }
 
 .page-header{
-    background-color: var(--color-backgroundnew);
+    background-color: var(--color-primary);
 
     display: flex;
     flex-direction: column;
@@ -27,6 +27,8 @@
     transition: opacity 0.2s;
 }
 
+/* o hover faz com que a opacity aconteça */
+
 .page-header .top-bar-container a:hover{
     opacity: 0.6;
 }
@@ -40,11 +42,14 @@
     width: 90%;
     margin: 3.2rem auto;
 
+    position: relative;
 }
 
 .page-header .header-content strong{
     font: 700 3.6rem Archivo;
+    /* font: peso tamanho fonte */
     line-height: 8rem;
+    /* line-height: altura da linha do texto; */
     color:var(--color-title-in-primary);
 }
 
@@ -53,7 +58,7 @@
 }
 
 #search-teachers label{
-    color: var(--color-text-in-primary)
+    color: var(--color-text-in-primary);
 }
 
 #search-teachers .select-block{
@@ -121,6 +126,13 @@
     width: 90%;
 }
 
+/* #page-study article{
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    margin-top: 2.4re;
+} */
+
 .teacher-item{
     background-color: var(--color-box-base);
     border: 1px solid var(--color-line-in-white);
@@ -168,7 +180,8 @@
     border-top: 1px solid var(--color-line-in-white);
     margin-top: 3.2rem;
 
-    display: felx;
+    /* align-items: alinha os itens da box no centro; justify-content: ; */
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
@@ -183,6 +196,7 @@
     font-size: 1.6rem;
     color: var(--color-primary);
     display: block;
+    /* display: block; adiciona uma quebra de linha / evita que o site quebre a linha alterando o resultado do bloco*/
 }
 
 
@@ -210,64 +224,73 @@
     background: var(--color-secondary-dark);
 }
 
-@media (min-widht:700px){
+@media (min-width:700px){
     #page-study #container{
         max-width: 100vw;
     }
 
+    .page-header{
+        height: 340px;
+    }
 
-.page-header{
-    height: 340px;
-}
+    .page-header .top-bar-container{
+        max-width: 1100px;
+    }
 
-.page-header .top-bar-container{
-    max-width: 1100px;
-}
+    .page-header .header-content{
+        max-width: 740px;
 
-.page-header .header-content{
-    max-width: 740px;
-    margin: 0 auto;
+        margin: 0 auto;
 
-    flex: 1 1;
-    padding-bottom: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-.page-header .header-content strong{
-    max-width: 350px;
-}
+    .page-header .header-content strong{
+        max-width: 350px;
+    }
 
-.teacher-item header,
-.teacher-item footer{
-    padding: 32px;
-}
+    .teacher-item header,
+    .teacher-item footer{
+        padding: 32px;
+    }
 
-#search-teachers{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px  ;
-    bottom: -28px;
-}
+    #search-teachers{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+    #page-study main{
+        padding: 32px 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    
+    #search-teachers .select-block{
+        margin-bottom: 0;
+    }
 
-#page-study main{
-    padding: 32px;
-    max-width: 740px;
-    margin: 0 auto;
-}
+    .teacher-item > p{
+        padding: 0 32px;
+    }
 
-#search-teachers .select-block{
-    margin-bottom: 0;
-}
+    .teacher-item footer p strong{
+        display: initial;
+        margin-left: 16px;
+    }
 
-.teacher-item footer p strong{
-    display: initial;
-    margin-left: 16px;
-    justify-content: center;
-}
+    .teacher-item footer button{
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+    }
 
-.teacher-item footer button img{
-    margin-right: 16px;
-}
+    .teacher-item footer button img{
+        margin-right: 16px;
+    }
 }
