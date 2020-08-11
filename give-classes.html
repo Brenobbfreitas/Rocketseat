@@ -32,8 +32,8 @@
         </header>
 
         <main>
-            <form action="" id="create-classes">
-                <fieldset>
+            <form action="" >
+                <fieldset id="">
                     <legend>Seus dados</legend>
                     <div class="input-block">
                         <label for="name">Nome Completo</label>
@@ -53,7 +53,7 @@
                     </div>
                 </fieldset>
 
-                <fieldset>
+                <fieldset id="schedule-item">
                     <legend>Sobre a aula</legend>
                     <div class="select-block">
                         <label for="subject">Materia</label>
@@ -79,9 +79,82 @@
                     </div>
                 </fieldset>
 
+                <fieldset id="schedule-item">
+                    <legend>Horarios disponíveis
+                        <button id="add-time">+ Novo Horario</button>
+                    </legend>
+
+                    <div class="schedule-item">
+
+                        <div class="select-block">
+                            <label for="weeday">Dia da semana</label>
+                            <select name="weekday[]" id="weekday" required>
+                                <option value="value">Selecione uma opção</option>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>    
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time" name="time_from[]" required>
+                        </div>
+                    
+                        <div class="input-block">
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]"required>
+                        </div>
+
+                    
+
+                    <div class="select-item">
+
+                        <div class="select-block">
+                            <label for="weeday">Dia da semana</label>
+                            <select name="weekday[]" id="weekday" required>
+                                <option value="value">Selecione uma opção</option>
+                                <option value="0">Domingo</option>
+                                <option value="1">Segunda-feira</option>
+                                <option value="2">Terça-feira</option>
+                                <option value="3">Quarta-feira</option>
+                                <option value="4">Quinta-feira</option>
+                                <option value="5">Sexta-feira</option>
+                                <option value="6">Sábado</option>
+                            </select>    
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time" name="time_from[]" required>
+                        </div>
+                    
+                        <div class="input-block">
+                            <label for="time_to">Até</label>
+                            <input type="time" name="time_to[]"required>
+                        </div>
+
+                    </div>
+                </fieldset>
             </form>
+
+            <footer>
+                <p>
+                    <img src="/images/icons/warning.svg" alt="aviso importante">
+                    importante! <br>
+                    Preencha todos os dados
+                </p>
+                <button type="submit" id="create-classes">Salvar cadastro</button>
+            </footer>
+    
         </main>
+        
     </div>
+</div>
 
 
 </body>
