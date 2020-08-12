@@ -17,17 +17,10 @@
     padding: 1.6rem 0;
 }
 
+
 .page-header .top-bar-container a{
     height: 3.2rem;
     transition: opacity 0.2s;
-}
-
-.page-header .header-content p {
-    max-width: 30rem;
-    font-size: 1.6rem;
-    line-height: 2.6rem;
-    color: var(--color-text-in-primary);
-    margin-top: 2.4rem;
 }
 
 /* o hover faz com que a opacity aconteça */
@@ -54,6 +47,14 @@
     line-height: 4.2rem;
     /* line-height: altura da linha do texto; */
     color:var(--color-title-in-primary);
+}
+
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
 }
 
 @media (min-width:700px){
